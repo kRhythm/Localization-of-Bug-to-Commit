@@ -80,19 +80,7 @@ public class SourceFileInfoExtractor {
         return ko;
     }
 
-    private void solveTypeDecl(ClassOrInterfaceDeclaration node) {
-        ResolvedTypeDeclaration typeDeclaration = JavaParserFacade.get(typeSolver).getTypeDeclaration(node);
-        if (typeDeclaration.isClass()) {
-            out.println("\n[ Class " + typeDeclaration.getQualifiedName() + " ]");
-            for (ResolvedReferenceType sc : typeDeclaration.asClass().getAllSuperClasses()) {
-                out.println("  superclass: " + sc.getQualifiedName());
-            }
-            for (ResolvedReferenceType sc : typeDeclaration.asClass().getAllInterfaces()) {
-                out.println("  interface: " + sc.getQualifiedName());
-            }
-        }
-    }
-
+  
     private void solve(Node node) {
         if (node instanceof ClassOrInterfaceDeclaration) {
             solveTypeDecl((ClassOrInterfaceDeclaration) node);
@@ -148,13 +136,7 @@ public class SourceFileInfoExtractor {
         }
     }
 
-    private List<Node> collectAllNodes(Node node) {
-        List<Node> nodes = new LinkedList<>();
-        collectAllNodes(node, nodes);
-        nodes.sort((n1, n2) -> n1.getBegin().get().compareTo(n2.getBegin().get()));
-        return nodes;
-    }
-
+  
     private void collectAllNodes(Node node, List<Node> nodes) {
         nodes.add(node);
         node.getChildNodes().forEach(c -> collectAllNodes(c, nodes));
@@ -195,8 +177,6 @@ public class SourceFileInfoExtractor {
         }
     }
 
-    public void setTypeSolver(TypeSolver typeSolver) {
-        this.typeSolver = typeSolver;
-    }
+    
 
 }
