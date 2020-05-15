@@ -1,0 +1,91 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>1</groupId>
+  <artifactId>1</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>AST</name> 
+  <dependencies>
+  <dependency>
+    <groupId>com.github.javaparser</groupId>
+    <artifactId>javaparser-core</artifactId>
+    <version>3.15.21</version>
+  </dependency>
+  <dependency>
+    <groupId>fr.inria.gforge.spoon.labs</groupId>
+    <artifactId>gumtree-spoon-ast-diff</artifactId>
+    <version>1.24</version>
+</dependency>
+  <dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>osgi-over-slf4j</artifactId>
+    <version>1.7.30</version>
+</dependency>
+
+<dependency>
+  <groupId>org.lable.rfc3881.auditlogger.adapter</groupId>
+  <artifactId>slf4j</artifactId>
+  <version>1.7</version>
+</dependency>
+
+  
+
+  <dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-api</artifactId>
+    <version>2.13.0</version>
+  </dependency>
+  
+
+<dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-api</artifactId>
+    <version>2.0.0-alpha1</version>
+</dependency>
+
+  
+  <dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-simple</artifactId>
+    <version>2.0.0-alpha0</version>
+    <scope>test</scope>
+</dependency>
+
+  
+  
+  <dependency>
+    <groupId>com.github.javaparser</groupId>
+    <artifactId>java-symbol-solver-core</artifactId>
+    <version>0.3.2</version>
+</dependency>
+  
+  <dependency>
+    <groupId>org.eclipse.jgit</groupId>
+    <artifactId>org.eclipse.jgit</artifactId>
+    <version>5.7.0.202003110725-r</version>
+</dependency>
+  
+  <dependency>
+    <groupId>org.yaml</groupId>
+    <artifactId>snakeyaml</artifactId>
+    <version>1.26</version>
+</dependency>
+
+
+<dependency>
+    <groupId>io.github.java-diff-utils</groupId>
+    <artifactId>java-diff-utils</artifactId>
+    <version>4.7</version>
+</dependency>
+
+<dependency>
+    <groupId>org.eclipse.jgit</groupId>
+    <artifactId>org.eclipse.jgit</artifactId>
+    <version>5.7.0.202003110725-r</version>
+</dependency>
+
+  
+  </dependencies>
+  
+</project>
+
+

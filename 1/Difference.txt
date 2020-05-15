@@ -1,0 +1,29 @@
+Update Method at Main:10
+	 to public static int ExtraMethod() {
+	    int x;
+	    x = 2;
+	    int y;
+	    while (x) {
+	        x--;
+	    } 
+	    return x;
+	}
+Update TypeReference at Main:10main
+	void to int
+Update Literal at Main:3main
+	"About to encounter a method." to "changed it."
+Update UnaryOperator at Main:7main
+	h-- to h++
+Update Literal at Main:15ExtraMethod
+	"This is cool" to "Method was executed successfully!"
+Update Wra at Main
+	 to public
+Insert For at Main:9main
+	for (int i = 0; i < 1; i++);
+Insert TypeAccess at Main
+	Main
+Move Method from Main:10 to Main:15
+	private static void myMethod() {
+	    java.lang.System.out.println("Printing from inside myMethod()!");
+	}
+
