@@ -6,4 +6,7 @@ DiffFilesInCommit file:
 1. Clones a remote repository.
 2. Iterates through all the commits of the repository and for each commit we list all the modified files and for each 
    modified file we output the current version and previous version of the modified file into Original.java and Revised.java.
-3. Now we call GraphDiff in order to tokenize the difference between the two files. 
+3. Now we call GraphDiff in order to find the difference between the two files.
+
+Tokenize file:
+1. Tokenizes the difference file generated.
